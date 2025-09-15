@@ -1,0 +1,382 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+     scroll-behavior: smooth;
+}
+body{
+    background: black;
+
+}
+.navbar{
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(15%);
+    margin: auto;
+     
+
+}
+.icon{
+    float: left;
+}
+
+.logo{
+    color: rgb(255, 102, 0);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 15px;
+
+}
+.menu{
+    width: 400px;
+    height: 30px;
+    float: left;
+    color:white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.menu ul {
+    float: left;
+    gap: 100px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    outline: none;
+   
+   
+}
+ul li{
+    outline: none;
+    list-style: none;
+    margin-top: 19px;
+    margin-left: 62px;
+}
+
+    
+ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none;
+    font-size: 20px;
+    display: flex;
+    justify-content: flex-end;
+    transition: ease-in-out 0.3s;
+}
+ul li a:hover{
+    color: rgb(255, 102, 0);;
+}
+
+section{
+    min-height: 100vh;
+    padding: 10rem ;
+
+}
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.home-content h1{
+    font-size: 8rem;
+    font-weight: 700;
+    margin-top: 1.5rem;
+    color:rgb(255, 102, 0);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.home-content h3{
+    margin: 1rem;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 5rem;
+}
+.home-content p{
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 1.5rem;
+
+    
+}
+.home-img img{
+    width: 32vw;
+    border-radius: 40%;
+    box-shadow: 0 0 25px rgb(255, 102, 0);
+              
+    transition: ease-in 0.2s;
+
+
+}
+.home-img img:hover{
+     box-shadow: 0 0 25px rgb(255, 102, 0),
+                 0 0 50px rgb(255, 102, 0),
+                 0 0 100px rgb(255, 102, 0);
+}
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+
+}
+.about-img img{
+    width: 32vw;
+    border-radius: 40%;
+    box-shadow: 0 0 25px rgb(255, 102, 0);
+    transition: ease-in 0.2s;
+
+}
+.about-img img:hover{
+     box-shadow: 0 0 25px rgb(255, 102, 0),
+                 0 0 50px rgb(255, 102, 0),
+                 0 0 100px rgb(255, 102, 0);
+}
+.about-content h2{
+    font-size: 5rem;
+    text-align: left;
+    
+    margin-top: 1.5rem;
+    color:rgb(255, 102, 0);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.about-content p{
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 1.5rem;
+}
+::-webkit-scrollbar{
+    width: 20px;
+}
+::-webkit-scrollbar-thumb{
+    background-color:rgb(167, 68, 3) ;
+}
+::-webkit-scrollbar-track{
+    background-color: rgb(255, 102, 0),;
+}
+
+.heading{
+    text-align: center;
+    font-size: 7rem;
+    margin: 5rem;
+}
+.services h2{
+    color:rgb(255, 102, 0);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.services-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    align-items: center;
+    gap: 2.5rem;
+}
+.services-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(255, 102, 0) ;
+    height: 600px;
+    border-radius: 3rem;
+    cursor: pointer;
+    border: 5px solid transparent;
+    transition: 0.4s ease-in-out;
+}
+.services-box:hover{
+    background-color: black ;
+    color:  rgb(255, 102, 0);
+    border: 5px solid  rgb(255, 102, 0) ;
+    transform: scale(1.03);
+}
+.services-info{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+.services-info h4{
+    font-size: 4rem;
+    margin: 1rem 0;
+    font-weight: 800;
+}
+.services-info p{
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height:1.7;
+}
+.projects{
+    background-color: black;
+
+}
+.projects-box{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    place-items: center;
+    gap: 3rem;
+    row-gap: 5rem;
+ 
+}
+.heading{
+    color: rgb(255, 102, 0) ;
+    font-size: 3rem;
+    font-weight: 800;
+}
+.projects-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: black;
+    border: 2px solid rgb(255, 102, 0)    ;
+    border-radius: 3rem;
+    gap: 2rem;
+    padding: 5rem 2rem;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgb(255, 102, 0)  ;
+    transition: 0.3s ease;
+}
+.projects-card:hover{
+    box-shadow: 0 0 25px rgb(255, 102, 0)  ;
+    box-shadow: 0 0 50px rgb(255, 102, 0)  ;
+    transform: scale(1.02);
+}
+.projects-card img{
+    max-width: 300px;
+    border-radius: 2rem;
+    object-fit: cover;
+
+}
+.projects-card h3{
+    font-size: 3rem;
+    color:rgb(255, 102, 0) ;
+}
+.projects-card p{
+    font-size: 1.6rem;
+    color: rgb(255, 102, 0);
+}
+.contact{
+    background-color: black;
+}
+.contact h2{
+    color:rgb(255, 102, 0) ;
+    font-size: 3rem ;
+}
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6rem;
+    margin: 5rem 0;
+    text-align: center;
+}
+.contact form .input-box input, 
+.contact form textarea{
+    width: 100%;
+    padding: 2.5rem;
+    font-size: 1.8rem;
+    color: rgb(255, 102, 0);
+    background-color: black;
+    border: 2px solid rgb(255, 102, 0);
+    border-radius: 10px;
+    margin: 1.5rem 0;
+    resize: none;
+
+}
+.btn{
+    background-color: rgb(255, 102, 0);
+    width: 300px;
+    border: 2px solid rgb(255, 102, 0);
+    border-radius: 10px;
+    font-size: 25px;
+    font-weight: 800;
+    padding: 30px;
+    transition: 0.3s ease;
+
+}
+.btn:hover{
+    transform: scale(88%);
+}
+.footer{
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 50px 0;
+}
+.footer ul{
+    text-align: center;
+    font-size: 1.8rem;
+    
+}
+.footer ul li{
+    display: inline-block;
+    margin-left: 20px;
+}
+.footer ul li a{
+    color: white;
+    border-bottom:  2px solid transparent;
+    transition: 0.8s ease-in-out;
+}
+    
+.footer ul li:hover{
+    border-bottom:  2px solid rgb(255, 102, 0);
+   
+
+}
+
+/* Menu & Close Button Styling */
+#menu-btn, #close-btn {
+    font-size: 2.5rem;
+    color: rgb(255, 102, 0);
+    cursor: pointer;
+    display: none; /* Hidden by default */
+    z-index: 1001;
+}
+
+/* Positioning */
+#menu-btn {
+    position: fixed;
+    top: 15px;
+    right: 25px;
+}
+#close-btn {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+}
+
+/* Responsive for below 1285px */
+@media(max-width:1285px) {
+    #menu-btn {
+        display: block;
+    }
+    .navbar {
+        position: fixed;
+        top: 0;
+        right: -100%; /* Hidden off-screen */
+        width: 60%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.95);
+        border-left: 2px solid rgb(255, 102, 0);
+        border-bottom-left-radius: 1rem;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        transition: 0.4s ease;
+    }
+    .navbar.active {
+        right: 0; /* Slide in */
+    }
+    .navbar .menu ul {
+        flex-direction: column;
+        width: 100%;
+        
+    }
+    .navbar .menu ul li {
+        margin: 2rem 0;
+        margin: 1px;
+    }
+    #close-btn {
+        display: block;
+    }
+}
